@@ -13,10 +13,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [12.x]
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -33,4 +29,3 @@ jobs:
     - name: Run the tests
       working-directory: ./to-do-app
       run: npm test
-      
